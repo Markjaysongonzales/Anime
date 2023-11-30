@@ -1,0 +1,223 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   
+}
+
+body {
+    height: 3000px; /* SCROLL MO */
+  background: linear-gradient(55deg, #e2dcdc 0%, #222424 51%, #1f2020 50%);
+}
+
+html, body{
+    margin: 0%;
+    padding: 0%;
+    height: 100%; 
+    width: 100%;
+    font-size: 15px;
+    color: #000000;
+}
+
+.bcimg {
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    display: table;
+    background: url(C:/Users/acer/Pictures/MARK/IMAHE1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: slide 20s infinite;
+}
+
+
+/* GARUO GLOW TEXT*/
+h1 {
+    margin-right: 50%;
+    margin-left: 32%;
+    margin-top: 250px;
+    text-transform: uppercase;
+    font-size: 200px;
+    font-family: 'Metal Mania', sans-serif;
+    color: #970a0afd;
+
+    /*animation*/
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00f2ff, 0 0 40px #08a5d9, 0 0 50px #05fbff, 0 0 60px #00fffbbc, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #80e6fff3, 0 0 40px #34afce, 0 0 50px #06cfee, 0 0 60px #099ba0, 0 0 70px #4de7ff, 0 0 80px #ff4da6;
+  }
+}
+/* END */
+
+ /* CONTENT 1*/
+.content {
+   padding: 0%;
+   text-align: center;
+    color: #000000;
+    font-size: 100%;
+    max-width: 100%;
+    margin-top: 10%;
+}
+
+.content h3 {
+    font-size: 100px;
+    color: #ffffff;
+    font-family: 'Tilt Neon', sans-serif;
+    margin-top: -100px;
+}
+
+.content p {
+    font-family: 'Tilt Neon', sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.content h2 {
+    color: #ff0000;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-top: 50px;
+    text-shadow: 0 0 3px #FF0000;
+}
+
+h2:hover {
+    color: #fffffffb;
+    box-shadow: inset 200px 0 0 0 #ff0000;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+  /* END CONTENT 1 */
+
+
+  /* CONTENT 2 */
+
+.content-2{
+ margin-left: 15%;  
+ margin-top: 30%; 
+}
+
+.content-2 h2 {
+    font-family: 'Tilt Neon', sans-serif;
+    font-size: 40px;
+    color: #ffffff;
+    margin-left: -4%;
+}
+
+.content-2 ol, li {
+    font-family: 'Tilt Neon', sans-serif;
+    color: #ffffff;
+}
+
+/* END CONTENT-2 */
+
+ /* THIS GAROU */
+.caption {
+    color: #00f2ff;
+    font-size: 80px;
+    font-family: 'Tilt Neon', sans-serif;
+    margin-bottom: 40%;
+    margin-top: -25%;
+    margin-left: 10%;
+}
+
+
+
+
+/* BACKGROUND SLIDESHOW*/
+
+@keyframes slide {
+    0%{
+       background-image: url("IMAHE1.jpg");
+    }
+    20%{
+        background-image: url("IMAHE2.jpg");
+    }
+    20.01%{
+        background-image: url("IMAHE3.jpg");
+     }
+     40%{
+         background-image: url("IMAHE4.jpg");
+     }
+     40.01%{
+        background-image: url("IMAHE5.jpg");
+     }
+     60%{
+         background-image: url("IMAHE6.jpg");
+     }
+     60.01%{
+         background-image: url("IMAHE4.jpg");
+      }
+    80%{
+        background-image: url("IMAHE2.jpg");
+      }
+      80.01%{
+        background-image: url("IMAHE5.jpg");
+     }
+     100%{
+         background-image: url("IMAHE6.jpg");
+     }
+}  /* END SLIDESHOW */
+
+
+.big-image {
+    width: 50%;
+    height: auto;
+    background-origin: padding-box;
+    margin-left: 45%;
+    margin-top: -25%;
+    margin-right: 20%;
+    -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0, 0, 0, 0.068));
+}
+
+.bottomtxt {
+    margin-top: -15%;
+    margin-left: 13%;
+    text-transform: uppercase;
+    font-family: 'Tilt Neon', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.friends {
+    margin-left: 15%;
+    margin-top: 10px;
+    margin-bottom: 100px;
+
+}
+
+
+/* footer */
+
+footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 18;
+    list-style: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+
+}
+
+footer li{
+    opacity: 60%;
+}
+footer li ul{
+    display: inline-block;
+    padding: 0 15px;
+}
+footer a {
+    color: #ffffff;
+    font-weight: 500;
+}
